@@ -40,6 +40,7 @@ public class LibroControllerTests
         libros.Should().NotBeNull();
         libros!.Count.Should().BeGreaterOrEqualTo(15);
         libros.Should().Contain(l => l.Titulo == "Harry Potter y la piedra filosofal");
+        return true;
     }
 
     [Fact]
